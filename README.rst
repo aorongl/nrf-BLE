@@ -1,8 +1,8 @@
-.. zephyr:code-sample:: ble_peripheral_nus
+.. zephyr:code-sample:: ble_peripheral
    :name: Peripheral NUS
    :relevant-api: bluetooth
 
-   Implement a simple echo server using the Nordic UART Service (NUS).
+   Implement a simple echo server using the Nordic UART Service.
 
 Overview
 ********

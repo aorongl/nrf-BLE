@@ -233,18 +233,6 @@ int main(void)
 		return err;
 	}
 
-	// err = bt_addr_le_from_str("FF:EE:DD:CC:BB:AA", "random", &addr);
-	// if (err) {
-	// 	printk("Failed to init bluetooth ID: %d\n", err);
-	// 	return err;
-	// }
-
-	// err = bt_id_create(&addr, NULL);
-	// if (err < 0) {
-	// 	printk("Failed to create a new ID: %d\n", err);
-	// 	return err;
-	// }
-
 	err = bt_enable(NULL);
 	if (err) {
 		printk("Failed to enable bluetooth: %d\n", err);
