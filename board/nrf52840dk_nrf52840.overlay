@@ -1,0 +1,27 @@
+/ {
+	leds {
+		compatible = "gpio-leds";
+
+		led0: led_0 {
+			status = "disabled";
+		};
+
+		led1: led_1 {
+			gpios = <&gpio0 12 GPIO_ACTIVE_LOW>;
+			label = "Green LED 0";
+		};
+
+		led2: led_2 {
+			gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
+			label = "Green LED 1";
+		};
+
+		led3: led_3 {
+			status = "disabled";
+		};
+	};
+};
+
+&gpio0 {
+	status = "okay";
+};
